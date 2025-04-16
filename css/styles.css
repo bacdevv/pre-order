@@ -637,6 +637,86 @@ button {
 	margin-right: auto;
 }
 
+/* === PREORDER DETAILS */
+.preorder-details__cover {
+	/* mask: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 90.6742%); */
+}
+
+.preorder-details__desc {
+	width: 900px;
+}
+
+.preorder-details__link {
+	color: var(--text-color);
+	font-family: "Inter", sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	text-decoration: underline;
+	margin-bottom: 80px;
+	display: block;
+}
+
+.preorder-details__label {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.preorder-details__label-wrap {
+	position: relative;
+}
+
+.preorder-details__label-cloud {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 217px;
+	object-fit: contain;
+	animation: cloud-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes cloud-pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.preorder-details__label-wrap:nth-of-type(1) .preorder-details__label-cloud {
+	top: -72px;
+	left: -30px;
+}
+
+.preorder-details__label-wrap:nth-of-type(3) .preorder-details__label-cloud {
+	top: -75px;
+	left: 14px;
+}
+
+.preorder-details__label-img {
+	width: 158px;
+	margin-right: 20px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 4px 0px;
+}
+
+.preorder-details__label-img:nth-child(2) {
+	width: 110px;
+}
+
+.preorder-details__label-img:hover {
+	transform: scale(1.1);
+	transition: transform 0.3s ease;
+}
+
 /* === FOOTER === */
 .preorder-footer {
 	/* Nếu cần style riêng cho footer, thêm ở đây */
