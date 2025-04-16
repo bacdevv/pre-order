@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cờ Chúa - Rạch Đôi Sơn Hà</title>
+
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+			crossorigin="anonymous" />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+		<link rel="shortcut icon" href="./favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+		<link rel="manifest" href="./favicon/site.webmanifest" />
+
+		<!-- Stylesheet CSS -->
+		<link rel="stylesheet" href="./fonts/stylesheet.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body style="height: 5000px">
+		<div class="preorder-wrapper">
+			<!-- Start of Header -->
+			<header class="preorder-header">
+				<a href="#!" class="preorder-logo-link">
+					<img src="./img/logo.png" alt="" class="preorder-logo" />
+					<img src="./img/logo-filter.png" alt="" class="preorder-logo-filter" />
+				</a>
+
+				<nav class="preorder-nav">
+					<ul class="preorder-nav-list d-flex align-items-center gap-5">
+						<li class="preorder-nav-item">
+							<a href="#!" class="preorder-nav-link">SẢN PHẨM</a>
+						</li>
+						<li class="preorder-nav-item">
+							<a href="#!" class="preorder-nav-link">CÂU CHUYỆN</a>
+						</li>
+						<li class="preorder-nav-item">
+							<a href="#!" class="preorder-nav-link">BÀI VIẾT</a>
+						</li>
+						<li class="preorder-nav-item">
+							<a href="#!" class="preorder-nav-link">LIÊN HỆ</a>
+						</li>
+					</ul>
+				</nav>
+
+				<a href="#!" class="preorder-btn preorder-btn__header">MUA HÀNG</a>
+			</header>
+			<!-- End of Header -->
+
+			<main>
+				<!-- Start of preorder hero -->
+				<section class="preorder-hero">
+					<img
+						src="./img/hero-img-01.webp"
+						alt="Cờ Chúa Hero"
+						class="w-100 h-100 object-fit-cover preorder-hero__img" />
+
+					<img
+						src="./img/hero-img-02.png"
+						alt="Lightning"
+						class="preorder-hero__lightning" />
+
+					<div class="preorder-hero__filter">
+						<div class="preorder-hero__filter--blue"></div>
+						<div class="preorder-hero__filter--red"></div>
+					</div>
+				</section>
+				<!-- End of preorder hero -->
+
+				<!-- Start of preorder product -->
+				<section class="preorder-product">
+					<div class="container-fluid px-0">
+						<div class="row align-items-stretch min-vh-100 g-0">
+							<div class="col-md-6 d-flex h-100">
+								<div class="preorder-product__content">
+									<p class="preorder-section-title">Bộ Sản Phẩm Cờ Chúa</p>
+									<p class="preorder-section-heading">RẠCH ĐÔI SƠN HÀ</p>
+									<p class="preorder-section-desc">
+										<b>Rạch Đôi Sơn Hà</b> là bộ trò chơi trí tuệ sử dụng luật
+										chơi <b>Cờ Tướng</b>, phủ lên bối cảnh lịch sử Việt Nam thời
+										kỳ
+										<b>Trịnh - Nguyễn phân tranh.</b>
+									</p>
+
+									<div>
+										<span class="preorder-product__price-old">đ 999.000</span>
+									</div>
+									<div>
+										<span class="preorder-product__price-new"
+											><span class="preorder-product__price-new--small"
+												>Chỉ còn</span
+											>
+											đ699.000</span
+										>
+									</div>
+									<div>
+										<small class="preorder-product__deal-time"
+											>Ưu đãi kết thúc sau:
+											<span id="preorder-countdown" class="preorder-countdown"
+												>00:22:35:04</span
+											></small
+										>
+									</div>
+									<a href="#!" class="preorder-btn preorder-product__order-btn"
+										>Đặt ngay</a
+									>
+								</div>
+							</div>
+							<div class="col-md-6 d-flex h-100">
+								<div
+									id="preorder-slideshow"
+									class="preorder-product__img-slideshow"
+									data-imgs='["./img/product-rach-doi-song-ha.webp","./img/product2.png","./img/product3.png"]'>
+									<img
+										id="slideshow-img"
+										src="./img/product-rach-doi-song-ha.webp"
+										alt="Cờ Chúa"
+										class="preorder-product__img" />
+									<button
+										id="slideshow-prev"
+										class="slideshow-btn slideshow-btn-prev">
+										<img src="./img/icon-arrow-left.svg" alt="" />
+									</button>
+									<button
+										id="slideshow-next"
+										class="slideshow-btn slideshow-btn-next">
+										<img src="./img/icon-arrow-right.svg" alt="" />
+									</button>
+									<div
+										id="slideshow-dots"
+										class="preorder-product__slideshow-dots">
+										<button class="slideshow-dot"></button>
+										<button class="slideshow-dot" aria-current="true"></button>
+										<button class="slideshow-dot" aria-current="true"></button>
+										<button class="slideshow-dot" aria-current="true"></button>
+										<button class="slideshow-dot" aria-current="true"></button>
+										<button class="slideshow-dot" aria-current="true"></button>
+										<button class="slideshow-dot" aria-current="true"></button>
+										<button class="slideshow-dot" aria-current="true"></button>
+										<button class="slideshow-dot" aria-current="true"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End of preorder product -->
+
+				<!-- Start of preorder product -->
+				<section class="preorder-content">
+					<div class="container py-5">
+						<!-- Item 1 -->
+						<div class="row align-items-center">
+							<div class="col-md-5 mb-4 mb-md-0 text-center">
+								<div class="hexagon-border-wrapper mx-auto">
+									<div class="hexagon-img-wrapper">
+										<img src="./img/people-01.webp" alt="Cô bé chơi cờ" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7 text-center text-sm-left">
+								<p class="preorder-section-title">NỐI DÀI TRUYỀN THỐNG</p>
+								<p class="preorder-section-heading">GẮN KẾT THẾ HỆ</p>
+								<p class="preorder-section-desc">
+									Bên bàn cờ tướng, nhiều đời tiền nhân nước Việt hàn huyên thế
+									sự. Ông chỉ cháu nhận biết từng quân, cha dạy con đường đi nước
+									bước. Xuôi theo thời vận, cờ tướng dần lọt thỏm giữa hàng vạn
+									thú vui mới mẻ.
+								</p>
+								<p class="preorder-section-desc">
+									Do đó, <b>Cờ Chúa</b> ra đời với ý niệm giữ gìn mối cố kết giữa
+									các thế hệ trên bàn cờ, khi lối chơi bất hủ được khoác lên mình
+									tấm áo tươi mới.
+								</p>
+							</div>
+						</div>
+
+						<!-- Item 2 -->
+						<div class="row align-items-center flex-row-reverse">
+							<div class="col-md-5 mb-4 mb-md-0 text-center">
+								<div class="hexagon-border-wrapper mx-auto">
+									<div class="hexagon-img-wrapper">
+										<img src="./img/people-02.webp" alt="Cô bé chơi cờ" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7 text-center text-sm-left">
+								<p class="preorder-section-title">Khám phá chuyện xưa</p>
+								<p class="preorder-section-heading">Trải nghiệm tích cũ</p>
+								<p class="preorder-section-desc">
+									Nếu cờ tướng ở Trung Quốc gắn với câu chuyện
+									<b>Hán- Sở tranh hùng</b>, thì Cờ Chúa sẽ đưa bạn về một giai
+									đoạn đặc sắc của lịch sử Việt Nam, thời
+									<b>Trịnh - Nguyễn phân tranh, Rạch Đôi Sơn Hà.</b>
+								</p>
+								<p class="preorder-section-desc">
+									Bàn <b>Cờ Chúa</b> mô phỏng chiến trường lũy Thầy, nơi còn lưu
+									dấu những chiến thuật quân sự kiệt xuất trong cuộc tranh quyền
+									cân não kéo dài hàng thế kỷ giữa hai gia tộc mạnh nhất nước Việt
+									300 năm trước.
+								</p>
+							</div>
+						</div>
+
+						<!-- Item 3 -->
+						<div class="row align-items-center">
+							<div class="col-md-5 mb-4 mb-md-0 text-center">
+								<div class="hexagon-border-wrapper mx-auto">
+									<div class="hexagon-img-wrapper">
+										<img src="./img/people-03.webp" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-7 text-center text-sm-left">
+								<p class="preorder-section-title">Dụng binh như thần</p>
+								<p class="preorder-section-heading">Cầm quân chắc chắn</p>
+								<p class="preorder-section-desc">
+									Quân cờ Chúa được thiết kế theo <b>hình lục giác</b> thay cho
+									hình tròn truyền thống, tạo ra trải nghiệm cầm nắm chắc chắn,
+									phù hợp với bàn tay người trẻ, giúp nhà cầm quân thêm phần tự
+									tin, quyết đoán.
+								</p>
+								<p class="preorder-section-desc">
+									Đồng thời, <b>kết cấu hình lục giác</b> này sẽ đặt nền móng cho
+									một thế giới sống động hơn về sau, khi thiên binh vạn mã hóa
+									nhân dạng trong tay.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End of preorder product -->
+			</main>
+
+			<footer class="preorder-footer"></footer>
+		</div>
+		<script src="./js/main.js"></script>
+	</body>
+</html>
