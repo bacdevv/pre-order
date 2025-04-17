@@ -639,7 +639,28 @@ button {
 
 /* === PREORDER DETAILS */
 .preorder-details__cover {
-	/* mask: linear-gradient(rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 90.6742%); */
+	position: relative;
+}
+
+.preorder-details__cover::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 60%; /* Increased from 30% to 60% to extend higher */
+	background: linear-gradient(to bottom, 
+		rgba(4, 9, 27, 0) 0%, 
+		rgba(4, 9, 27, 0.2) 30%,
+		rgba(4, 9, 27, 0.6) 60%, 
+		rgba(4, 9, 27, 0.9) 85%, 
+		#04091b 100%);
+	pointer-events: none;
+}
+
+.preorder-details__cover img {
+	width: 100%;
+	display: block;
 }
 
 .preorder-details__desc {
@@ -720,4 +741,116 @@ button {
 /* === FOOTER === */
 .preorder-footer {
 	/* Nếu cần style riêng cho footer, thêm ở đây */
+}
+
+/* === CHESS HISTORY SECTION === */
+.chess-history {
+	background: #020824;
+	padding: 80px 0;
+}
+
+.chess-cards-container {
+	display: flex;
+	justify-content: space-between; /* Changed from center to space-between */
+	width: 100%; /* Take up full container width */
+	max-width: 1360px; /* Set exact total width */
+	margin: 0 auto;
+	padding: 0 15px; /* Small padding instead of large margins */
+}
+
+.chess-story-card {
+	width: calc(33.33% - 14px); /* Each takes up 1/3 of space minus gap */
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+	transition: transform 0.3s ease, border-color 0.3s ease;
+	cursor: pointer;
+	border: 2px solid #f2a73d; /* Golden outline */
+}
+
+.chess-story-img-container {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 150%; /* Maintain aspect ratio */
+}
+
+.chess-story-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	transition: transform 0.5s ease; /* Add transition for zoom effect */
+}
+
+.chess-story-card:hover .chess-story-img {
+	transform: scale(1.1); /* Zoom in the image on hover */
+}
+
+.chess-story-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 20px;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+	color: #fff;
+	text-align: center;
+}
+
+.chess-story-category {
+	font-size: 1.4rem;
+	margin-bottom: 5px;
+	font-weight: 500;
+	font-family: "Inter 18pt";
+	opacity: 0.9;
+}
+
+.chess-story-title {
+	font-family: "Beaufort for LOL";
+	font-size: 2.4rem;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.chess-history-btn {
+	width: 172px;
+	height: 60px;
+	margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1399px) {
+	.chess-cards-container {
+		max-width: 900px;
+	}
+}
+
+@media (max-width: 991px) {
+	.chess-cards-container {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.chess-story-card {
+		width: calc(50% - 20px);
+		max-width: 440px;
+	}
+}
+
+@media (max-width: 767px) {
+	.chess-story-card {
+		width: 100%;
+		max-width: 440px;
+	}
+}
+
+/* Make sure chess history section takes full width */
+.chess-history .container {
+	max-width: 1400px; /* Wider container */
+	padding: 0 20px; /* Add small padding */
 }
